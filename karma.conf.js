@@ -15,25 +15,42 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'tests/*.js'
-    ],
+			'www/js/ng/angular.js',
+			'www/js/ng/angular-animate.js',
+			'www/js/ng/angular-sanitize.js',
+			'www/js/ng/angular-ui-router.js',
+			'www/js/ng/angular-mocks.js',
+			'www/js/init.js',
+			'www/js/constants.js',
+			'www/js/router.js',
+			'www/js/services/widgets.js',
+			'www/js/filters/capitalize.js',
+			'www/js/filters/zero-alert.js',
+			'www/js/directives/reqd.js',
+			'www/js/controllers/home.js',
+			'www/js/controllers/widget-edit.js',
+			'www/js/controllers/widget-view.js',
+			'www/js/site.js',
+			'www/tests/specs/**/*.js'
+		],
 
 
     // list of files to exclude
-    exclude: [
-    ],
+    exclude: [],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-    },
+			'www/js/!(ng)/*.js': ['coverage'],
+			'www/js/*.js': ['coverage'],
+		},
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['dots', 'junit'],
+    reporters: ['dots', 'junit', 'coverage'],
 
 		junitReporter: {
 			outputFile: 'test-results.xml'

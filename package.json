@@ -9,6 +9,7 @@
     "grunt-karma": "^2.0.0",
     "jasmine": "^2.4.1",
     "karma": "^0.13.22",
+    "karma-coverage": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-junit-reporter": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.0",
