@@ -4,13 +4,7 @@ module.exports = function(grunt) {
 		karma: {
       // Jenkins settings
       continuous: {
-        configFile: 'karma.conf.js',
-        singleRun: true,
-        browsers: ['PhantomJS'],
-        reporters: ['dots', 'junit'],
-        junitReporter: {
-          outputFile: 'test-results.xml'
-        }
+        configFile: 'karma.conf.js'
       }
     }
 	});
