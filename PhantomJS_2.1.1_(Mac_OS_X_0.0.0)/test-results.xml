@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="" timestamp="2016-06-16T22:29:28" id="0" hostname="Erics-MacBook-Pro.local" tests="28" errors="0" failures="0" time="0.105">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="home controller load widgets" time="0.017" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).home controller"/>
+  <testcase name="home controller view widget" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).home controller"/>
+  <testcase name="home controller edit widget" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).home controller"/>
+  <testcase name="home controller create widget" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).home controller"/>
+  <testcase name="widget edit controller demo test" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widget edit controller"/>
+  <testcase name="widget view controller demo test" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widget view controller"/>
+  <testcase name="reqd directive Test check the validation of the input" time="0.016" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).reqd directive Test"/>
+  <testcase name="capitalize filter tests capitalize a string" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).capitalize filter tests"/>
+  <testcase name="zeroAlert filter tests alert for zero" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).zeroAlert filter tests"/>
+  <testcase name="zeroAlert filter tests no alert for non-zero" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).zeroAlert filter tests"/>
+  <testcase name="zeroAlert filter tests zero alert for non-number" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).zeroAlert filter tests"/>
+  <testcase name="app router home state configuration" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router create state configuration" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router view state configuration" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router edit state configuration" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router home state url" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router create state url" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router view state url" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router edit state url" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router goto state change to home state" time="0.007" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router goto state change to widget create state" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router goto state change to widget view state" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="app router goto state change to widget edit state" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app router"/>
+  <testcase name="widgets service get all widgets" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widgets service"/>
+  <testcase name="widgets service get a widget" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widgets service"/>
+  <testcase name="widgets service insert a widget" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widgets service"/>
+  <testcase name="widgets service update a widget" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widgets service"/>
+  <testcase name="widgets service delete a widget" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).widgets service"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

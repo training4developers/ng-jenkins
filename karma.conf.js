@@ -1,5 +1,31 @@
-// Karma configuration
-// Generated on Fri Jun 10 2016 21:23:13 GMT-0700 (PDT)
+// Sauce Labs Platform Configurator
+// https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/
+
+// Sauce Connect
+// cd ~/Downloads/sc-4.3.16-osx/bin
+// ./sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY
+
+// process.env.SAUCE_USERNAME = '';
+// process.env.SAUCE_ACCESS_KEY = '';
+
+var customLaunchers = {
+	'Local_Phantom': {
+		base: 'PhantomJS'
+	},
+	// 'SL_Chrome': {
+	// 	base: 'SauceLabs',
+	// 	browserName: 'chrome'
+	// },
+	// 'SL_InternetExplorer': {
+	// 	base: 'SauceLabs',
+	// 	browserName: 'internet explorer',
+	// 	version: '10'
+	// },
+	// 'SL_FireFox': {
+	// 	base: 'SauceLabs',
+	// 	browserName: 'firefox',
+	// }
+};
 
 module.exports = function(config) {
   config.set({
@@ -50,11 +76,19 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['dots', 'junit', 'coverage'],
+    reporters: ['dots', 'junit', 'coverage', 'saucelabs'],
 
 		junitReporter: {
+			outputDir: 'junit',
 			outputFile: 'test-results.xml'
 		},
+
+		sauceLabs: {
+      testName: 'Karma and Sauce Labs demo',
+			startConnect: false
+    },
+
+		captureTimeout: 120000,
 
 
     // web server port
@@ -74,10 +108,16 @@ module.exports = function(config) {
     autoWatch: false,
 
 
-    // start these browsers
-    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    // // start these browsers
+    // // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+		customLaunchers: customLaunchers,
 
+		browsers: Object.keys(customLaunchers),
+
+		phantomjsLauncher: {
+			// Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
+			exitOnResourceError: true
+		},
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
